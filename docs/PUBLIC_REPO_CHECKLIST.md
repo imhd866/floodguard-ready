@@ -12,7 +12,7 @@
 - [ ] Confirm no secrets, personal data, `.env` files, editor files, or generated caches are tracked.
 - [ ] Add repository topics, description, license, screenshots, and the deployed demo URL.
 - [ ] Make only `floodguard-ready/` the claimed submission code, or publish it as a fresh repository preserving its creation history.
-- [ ] Add the final commit SHA and UTC timestamp to `PROVENANCE.md`.
+- [x] Record the initial implementation commit SHA and timestamp in `PROVENANCE.md`.
 - [ ] Disclose Codex assistance if required.
 - [ ] Record licenses/attribution for any assets added later.
 - [ ] Have a human review every safety instruction.
