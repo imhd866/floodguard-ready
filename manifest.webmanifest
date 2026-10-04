@@ -1,0 +1,9 @@
+{
+  "name": "FloodGuard Ready",
+  "short_name": "FloodGuard",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f4ea",
+  "theme_color": "#073b4c",
+  "description": "An offline flood-readiness check for Lagos households and community volunteers."
+}

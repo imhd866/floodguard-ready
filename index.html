@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073b4c">
+  <meta name="description" content="An offline flood-readiness check for Lagos households and community volunteers.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>FloodGuard Ready</title>
+</head>
+<body>
+  <a class="skip-link" href="#check">Skip to readiness check</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="FloodGuard Ready home"><span aria-hidden="true">≈</span> FloodGuard Ready</a>
+    <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#check">Check now</a><a href="#safety">Safety</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Built for low bandwidth. Works offline.</p>
+        <h1 id="hero-title">Know what to do <em>before</em> the water rises.</h1>
+        <p class="lede">A two-minute, plain-language readiness check for Lagos households and community volunteers. No account. No location tracking. No AI guesswork.</p>
+        <a class="button primary" href="#check">Start my check <span aria-hidden="true">→</span></a>
+        <p class="privacy-note">Your answers stay on this device and are cleared when you reset.</p>
+      </div>
+      <div class="signal-card" aria-label="Illustration of the three action levels">
+        <span class="signal signal-low">Ready <b>Review your plan</b></span>
+        <span class="signal signal-medium">Act now <b>Prepare to move</b></span>
+        <span class="signal signal-high">Leave safely <b>Seek higher ground</b></span>
+      </div>
+    </section>
+
+    <section id="how" class="how" aria-labelledby="how-title">
+      <p class="eyebrow">One calm decision at a time</p>
+      <h2 id="how-title">Observe. Check. Act.</h2>
+      <div class="steps">
+        <article><span>01</span><h3>Observe nearby conditions</h3><p>Use what you can see: rain, drains, water depth, and whether a safe route is open.</p></article>
+        <article><span>02</span><h3>Get a transparent signal</h3><p>Every answer contributes to a visible score. Nothing is hidden or predicted.</p></article>
+        <article><span>03</span><h3>Follow a short action card</h3><p>Print or share a plan designed to remain useful when connectivity disappears.</p></article>
+      </div>
+    </section>
+
+    <section id="check" class="checker" aria-labelledby="check-title">
+      <div class="checker-intro">
+        <p class="eyebrow">Two-minute readiness check</p>
+        <h2 id="check-title">What can you observe right now?</h2>
+        <p>This is decision support, not an official alert or flood forecast. If anyone is in immediate danger, call <a href="tel:112">112</a> or <a href="tel:767">767</a>.</p>
+      </div>
+
+      <form id="risk-form">
+        <fieldset>
+          <legend><span>1</span> Rain in your area</legend>
+          <div class="options">
+            <label><input type="radio" name="rain" value="0" required><span><b>None or light</b><small>Normal visibility and movement</small></span></label>
+            <label><input type="radio" name="rain" value="1"><span><b>Steady</b><small>Rain continuing for a while</small></span></label>
+            <label><input type="radio" name="rain" value="2"><span><b>Heavy</b><small>Difficult to see or hear</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>2</span> Drainage nearby</legend>
+          <div class="options">
+            <label><input type="radio" name="drain" value="0" required><span><b>Flowing</b><small>Water is moving freely</small></span></label>
+            <label><input type="radio" name="drain" value="1"><span><b>Slow or unknown</b><small>Partly blocked or cannot check</small></span></label>
+            <label><input type="radio" name="drain" value="2"><span><b>Blocked or overflowing</b><small>Water is backing up</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>3</span> Water on your route</legend>
+          <div class="options">
+            <label><input type="radio" name="water" value="0" required><span><b>No standing water</b><small>Usual route is clear</small></span></label>
+            <label><input type="radio" name="water" value="2"><span><b>Ankle deep</b><small>Water covers part of the route</small></span></label>
+            <label><input type="radio" name="water" value="4"><span><b>Above ankle or moving</b><small>Do not enter the water</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>4</span> Safe way to higher ground</legend>
+          <div class="options two">
+            <label><input type="radio" name="route" value="0" required><span><b>Yes</b><small>A known, clear route is available</small></span></label>
+            <label><input type="radio" name="route" value="3"><span><b>No or unsure</b><small>The route is blocked or not planned</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>5</span> Someone may need extra help</legend>
+          <div class="options two">
+            <label><input type="radio" name="support" value="0" required><span><b>No</b><small>Everyone can move independently</small></span></label>
+            <label><input type="radio" name="support" value="2"><span><b>Yes</b><small>A child, older person, disabled person, or anyone unwell</small></span></label>
+          </div>
+        </fieldset>
+        <div class="form-actions"><button class="button primary" type="submit">Show my action card</button><button class="button quiet" type="reset">Clear answers</button></div>
+      </form>
+
+      <section id="result" class="result" aria-live="polite" aria-atomic="true" hidden>
+        <p class="eyebrow">Your action card</p>
+        <div class="result-heading"><div><p id="result-level" class="result-level"></p><h2 id="result-title"></h2></div><div class="score"><span id="result-score"></span><small>readiness signal</small></div></div>
+        <p id="result-summary" class="result-summary"></p>
+        <h3>Do these next</h3><ol id="result-actions"></ol>
+        <details><summary>How was this signal calculated?</summary><p id="result-explanation"></p></details>
+        <div class="form-actions"><button id="print-button" class="button primary" type="button">Print or save card</button><button id="copy-button" class="button quiet" type="button">Copy summary</button></div>
+      </section>
+    </section>
+
+    <section id="safety" class="safety" aria-labelledby="safety-title">
+      <div><p class="eyebrow">Non-negotiable safety</p><h2 id="safety-title">Never walk, drive, or play through floodwater.</h2><p>Depth, current, open drains, electrical hazards, and contamination can be impossible to judge by sight. Move away from water and follow official instructions.</p></div>
+      <div class="emergency"><p>Immediate danger in Lagos?</p><a href="tel:112">Call 112</a><a href="tel:767">Call 767</a></div>
+    </section>
+  </main>
+
+  <footer><p><b>FloodGuard Ready</b> · Humanitarian decision support · <a href="README.md">Project documentation</a></p><p>Not affiliated with Lagos State emergency services. Emergency contacts should be re-verified before public launch.</p></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
