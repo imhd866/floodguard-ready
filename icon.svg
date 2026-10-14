@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">FloodGuard Ready wave mark</title>
+  <rect width="512" height="512" rx="112" fill="#073b4c"/>
+  <circle cx="256" cy="256" r="164" fill="#0d766e"/>
+  <path d="M118 224c45 0 45-48 90-48s45 48 90 48 45-48 90-48" fill="none" stroke="#f7f4ea" stroke-width="34" stroke-linecap="round"/>
+  <path d="M118 318c45 0 45-48 90-48s45 48 90 48 45-48 90-48" fill="none" stroke="#f4b942" stroke-width="34" stroke-linecap="round"/>
+</svg>

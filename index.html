@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#073b4c">
   <meta name="description" content="An offline flood-readiness check for Lagos households and community volunteers.">
+  <meta property="og:title" content="FloodGuard Ready">
+  <meta property="og:description" content="A transparent, offline flood-readiness check for Lagos households and community volunteers.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles.css">
   <title>FloodGuard Ready</title>
@@ -93,7 +97,7 @@
 
       <section id="result" class="result" aria-live="polite" aria-atomic="true" hidden>
         <p class="eyebrow">Your action card</p>
-        <div class="result-heading"><div><p id="result-level" class="result-level"></p><h2 id="result-title"></h2></div><div class="score"><span id="result-score"></span><small>readiness signal</small></div></div>
+        <div class="result-heading"><div><p id="result-level" class="result-level"></p><h2 id="result-title" tabindex="-1"></h2></div><div class="score"><span id="result-score"></span><small>readiness signal</small></div></div>
         <p id="result-summary" class="result-summary"></p>
         <h3>Do these next</h3><ol id="result-actions"></ol>
         <details><summary>How was this signal calculated?</summary><p id="result-explanation"></p></details>
@@ -108,6 +112,6 @@
   </main>
 
   <footer><p><b>FloodGuard Ready</b> · Humanitarian decision support · <a href="README.md">Project documentation</a></p><p>Not affiliated with Lagos State emergency services. Emergency contacts should be re-verified before public launch.</p></footer>
-  <script type="module" src="app.js"></script>
+  <script type="module" src="app.js?v=2"></script>
 </body>
 </html>

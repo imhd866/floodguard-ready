@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
   }));
   resultPanel.hidden = false;
   resultPanel.scrollIntoView({ behavior: "smooth", block: "start" });
-  document.querySelector("#result-title").focus({ preventScroll: true });
+  requestAnimationFrame(() => document.querySelector("#result-title").focus({ preventScroll: true }));
 });
 
 form.addEventListener("reset", () => { resultPanel.hidden = true; currentResult = undefined; });

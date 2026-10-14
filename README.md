@@ -8,6 +8,8 @@ The repository also contains `../floodguard-lagos-lite`, a prior research protot
 
 See [PROVENANCE.md](PROVENANCE.md) for the precise boundary and [docs/RULES_REVIEW.md](docs/RULES_REVIEW.md) for eligibility and date risks.
 
+Submission preparation is collected in the [Devpost copy](docs/SUBMISSION_COPY.md), [three-minute demo script](docs/DEMO_SCRIPT.md), [screenshot plan](docs/SCREENSHOT_PLAN.md), [QA report](docs/QA_REPORT.md), and [public-repository checklist](docs/PUBLIC_REPO_CHECKLIST.md).
+
 ## Product
 
 - Two-minute self-assessment using observable, plain-language conditions
