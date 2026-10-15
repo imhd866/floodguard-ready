@@ -39,7 +39,9 @@ python -m http.server 4173
 
 ## Deploy
 
-The directory can be deployed unchanged to GitHub Pages, Cloudflare Pages, Netlify, or any static host. Set the publish directory to the repository directory (or copy its contents to a host's static output folder). No environment variables or secrets are required.
+The repository includes a GitHub Pages workflow at `.github/workflows/deploy-pages.yml`. After pushing the `main` branch to GitHub, configure **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. Tests run before deployment. No environment variables or secrets are required.
+
+The directory can also be deployed unchanged to Cloudflare Pages, Netlify, or another static host by using the repository root as the publish directory.
 
 ## Safety
 

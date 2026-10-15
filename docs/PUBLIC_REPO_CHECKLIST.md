@@ -11,6 +11,7 @@
 - [ ] Replace any unvalidated impact claims with clearly labeled hypotheses.
 - [ ] Confirm no secrets, personal data, `.env` files, editor files, or generated caches are tracked.
 - [ ] Add repository topics, description, license, screenshots, and the deployed demo URL.
+- [x] Add an automated GitHub Pages workflow that runs tests before deployment.
 - [ ] Make only `floodguard-ready/` the claimed submission code, or publish it as a fresh repository preserving its creation history.
 - [x] Record the initial implementation commit SHA and timestamp in `PROVENANCE.md`.
 - [ ] Disclose Codex assistance if required.
