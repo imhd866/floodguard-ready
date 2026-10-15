@@ -2,7 +2,8 @@
 
 FloodGuard Ready is a new, offline-first flood-readiness check for Lagos households and community volunteers. It converts five observable conditions into a transparent action card. It does not predict floods, track people, or replace official alerts.
 
-**Live demo:** https://imhd866.github.io/floodguard-ready/  
+**Live demo:** https://imhd866.github.io/floodguard-ready/
+
 **Public source:** https://github.com/imhd866/floodguard-ready
 
 ## Why this is a separate submission
