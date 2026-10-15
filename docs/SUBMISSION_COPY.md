@@ -58,6 +58,6 @@ HTML5, CSS3, JavaScript ES modules, Service Worker API, Web App Manifest, Node.j
 
 ## Links
 
-- Try it: `[DEPLOYED_DEMO_URL]`
-- Source: `[PUBLIC_REPOSITORY_URL]`
+- Try it: https://imhd866.github.io/floodguard-ready/
+- Source: https://github.com/imhd866/floodguard-ready
 - Demo video: `[VIDEO_URL]`

@@ -26,3 +26,5 @@ The implementation was produced with OpenAI Codex assistance at the project owne
 Use Git commit timestamps and this file to demonstrate the boundary. Because the organizer's displayed dates conflict, obtain written confirmation that work created on 4 October 2026 is inside the eligible hacking period before submitting.
 
 Initial implementation commit: `6842a7fbad0fcbbcc8f97a5ba8460b6dc57ec673`, recorded at `2026-10-04T23:01:54+02:00`.
+
+Public repository: https://github.com/imhd866/floodguard-ready. The preserved history was first pushed publicly on 15 October 2026.
